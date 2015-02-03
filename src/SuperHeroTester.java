@@ -1,6 +1,6 @@
 /**
  * @author Jean-Claude Benard
- * @version 3 - Added the showPowers method and updated generateRandomPowers method
+ * @version 4 - Improved comments
  * Program Description: Test the creation of the hero object and the assiociated methods
  */
 public class SuperHeroTester {
