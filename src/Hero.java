@@ -5,10 +5,10 @@
 public class Hero {
 	
 	//private properties///////////////////////////////////////////////////////////////////////////
-	private int strength;
-	private int speed;
-	private int health;
-	private int hitRoll;
+	protected int strength;
+	protected int speed;
+	protected int health;
+	protected int hitRoll;
 	
 	//public properties////////////////////////////////////////////////////////////////////////////
 	public String name;
