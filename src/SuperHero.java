@@ -17,6 +17,18 @@ public class SuperHero extends Hero {
 		generateRandomPowers();		
 	}
 	
+	//public methods///////////////////////////////////////////////////////////////////////////////
+	public void showPower(){
+		String powersString = "";
+		
+		for(int x = 0; x < herosPowers.length; x++){
+			powersString = powersString + herosPowers[x] + ", "; 
+		}
+		
+		System.out.println(name + "'s powers are " + powersString);
+		
+	}
+	
 	//private methods////////////////////////////////////////////////////////////////////////////
 	private void generateRandomPowers(){
 		
@@ -24,15 +36,13 @@ public class SuperHero extends Hero {
 				Arrays.asList("Super Speed", "Super Strength", "Body Armor", "Flight", "Fire Generation", "Weather Control"));		
 		int roll;
 		
-		for(int i = 0; i >= herosPowers.length; i++){
-			 roll = (int)(Math.random() * powerList.size()) + 1;
+		for(int i = 0; i < herosPowers.length; i++){
+			 roll = (int)(Math.random() * powerList.size());
 			 
 			 herosPowers[i] = powerList.get(roll);
 			 
 			 powerList.remove(roll);
 			
-		}
-		
+		}		
 	}
-
 }
